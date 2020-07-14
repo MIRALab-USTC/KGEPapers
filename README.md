@@ -1,9 +1,9 @@
 # Must-read papers on Knowledge Graph Embedding (KGE)
 
 ## [Content](#content)
-- [Distance-based Models](#content)
-- [Tensor Factorization-based Models](#content)
-- [Neural Network-based Models](#content)
+- <a href="#distance-based-models">Distance-based Models</a>
+- <a href="#tensor-factorization-based-models">Tensor Factorization-based Models</a>
+- <a href="#neural-network-based-models">Neural Network-based Models</a>
 
 
 
