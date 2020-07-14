@@ -1,9 +1,9 @@
 # Must-read papers on Knowledge Graph Embedding (KGE)
 
 ## [Content](#content)
-- [[Distance-based Models](#content)](#-distance-based-models---content-)
-- [[Tensor Factorization-based Models](#content)](#-tensor-factorization-based-models---content-)
-- [[Neural Network-based Models](#content)](#-neural-network-based-models---content-)
+- [Distance-based Models](#content)
+- [Tensor Factorization-based Models](#content)
+- [Neural Network-based Models](#content)
 
 
 
@@ -122,4 +122,4 @@
     *Dai Quoc Nguyen, Thanh Vu, Tu Dinh Nguyen, Dat Quoc Nguyen, Dinh Q. Phung*.
 
 1. **InteractE:** **InteractE: Improving Convolution-based Knowledge Graph Embeddings by Increasing Feature Interactions**. AAAI 2020. [[Paper](https://arxiv.org/pdf/1911.00219.pdf)]    
-    *Shikhar Vashishth, Soumya Sanyal, Vikram Nitin2, Nilesh Agrawal, Partha Talukdar*.
+    *Shikhar Vashishth, Soumya Sanyal, Vikram Nitin, Nilesh Agrawal, Partha Talukdar*.
