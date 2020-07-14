@@ -84,9 +84,6 @@
 1. **On Multi-Relational Link Prediction with Bilinear Models**. AAAI 2018. [[Paper](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16900/16722)]  
     *Yanjie Wang, Rainer Gemulla, Hui Li*.
 
-1. **ANALOGY:** **On Multi-Relational Link Prediction with Bilinear Models**. AAAI 2018. [[Paper](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16900/16722)]  
-    *Yanjie Wang, Rainer Gemulla, Hui Li*.
-
 1. **N3-Regularizer:** **Canonical Tensor Decomposition for Knowledge Base Completion**. ICML 2018. [[Paper](https://arxiv.org/pdf/1806.07297.pdf)] [[Code](https://github.com/facebookresearch/kbc)]  
     *Timothée Lacroix, Nicolas Usunier, Guillaume Obozinski*.
 
