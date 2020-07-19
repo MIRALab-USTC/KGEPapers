@@ -4,6 +4,7 @@
 - <a href="#distance-based-models">Distance-based Models</a>
 - <a href="#tensor-factorization-based-models">Tensor Factorization-based Models</a>
 - <a href="#neural-network-based-models">Neural Network-based Models</a>
+- <a href="#others">Others</a>
 
 
 
