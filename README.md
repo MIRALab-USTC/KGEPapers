@@ -120,3 +120,10 @@
 
 1. **InteractE:** **InteractE: Improving Convolution-based Knowledge Graph Embeddings by Increasing Feature Interactions**. AAAI 2020. [[Paper](https://arxiv.org/pdf/1911.00219.pdf)]    
     *Shikhar Vashishth, Soumya Sanyal, Vikram Nitin, Nilesh Agrawal, Partha Talukdar*.
+
+## [Others](#content)
+1. **You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings**. ICLR 2020. [[Paper](https://openreview.net/pdf?id=BkxSmlBFvr)] [[Code](https://github.com/uma-pi1/kge)]  
+    *Daniel Ruffinelli, Samuel Broscheit, Rainer Gemulla*.
+
+1. **A Re-evaluation of Knowledge Graph Completion Methods**. ACL 2020. [[Paper](https://arxiv.org/abs/1911.03903)] [[Code](https://github.com/svjan5/kg-reeval)]  
+    *Zhiqing Sun, Shikhar Vashishth, Soumya Sanyal, Partha Talukdar, Yiming Yang*.
