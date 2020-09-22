@@ -9,35 +9,51 @@
 
 
 ## [Distance-based Models](#content)
-1. **SE:** **Learning Structured Embeddings of Knowledge Bases**. AAAI 2011. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/viewFile/3659/3898)]  
+1. **Learning Structured Embeddings of Knowledge Bases**. AAAI 2011. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/viewFile/3659/3898)]  
     *Antoine Bordes, Jason Weston, Ronan Collobert, Yoshua Bengio*.
+    > This paper proposes Structured Embeddings (**SE**), which assumes that the head and tail entities are similar in a relation-specific subspace: 
+![formula](https://render.githubusercontent.com/render/math?math=R^{(h)}h=R^{(t)}t).
 
-1. **TransE:** **Translating Embeddings for Modeling Multi-relational Data**. NIPS 2013. [[Paper](https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data)]  
+1. **Translating Embeddings for Modeling Multi-relational Data**. NIPS 2013. [[Paper](https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data)]  
     *Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, Oksana Yakhnenko*.
+    > This paper proposes **TransE**, which models the relations are translation operations between head and tail entities: 
+![formula](https://render.githubusercontent.com/render/math?math=h%2Br=t).
 
-1. **TransH:** **Knowledge Graph Embedding by Translating on Hyperplanes**. AAAI 2014. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531)]  
+1. **Knowledge Graph Embedding by Translating on Hyperplanes**. AAAI 2014. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531)]  
     *Zhen Wang, Jianwen Zhang, Jianlin Feng, Zheng Chen*.
+    > This paper proposes **TransH** to model the many-to-many property. It interpretes the relations as: 1) relation-specfic hyperplanes; 2) translation operations between head and tail entities projected on the hyperplane: 
+![formula](https://render.githubusercontent.com/render/math?math=h_{r}%2Br=t_{r}).
 
-1. **TransR:** **Learning Entity and Relation Embeddings for Knowledge Graph Completion**. AAAI 2015. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523)]  
+1. **Learning Entity and Relation Embeddings for Knowledge Graph Completion**. AAAI 2015. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523)]  
     *Yankai Lin, Zhiyuan Liu, Maosong Sun, Yang Liu, Xuan Zhu*.
+    > This paper proposes **TransR/CTransR**, which interpretes the relations as: 1) relation-specfic spaces; 2) translation operations between head and tail entities projected on the hyperplane: 
+![formula](https://render.githubusercontent.com/render/math?math=Rh%2Br=Rt).
 
-1. **TransD:** **Knowledge Graph Embedding via Dynamic Mapping Matrix**. ACL 2015. [[Paper](https://www.aclweb.org/anthology/P15-1067.pdf)]  
+1. **Knowledge Graph Embedding via Dynamic Mapping Matrix**. ACL 2015. [[Paper](https://www.aclweb.org/anthology/P15-1067.pdf)]  
     *Guoliang Ji, Shizhu He, Liheng Xu, Kang Liu, Jun Zhao*.
+    > This paper proposes **TransD** to improve TransR/CTransR. It uses two vectors to represent each entity and relation. 
+The first one represents the meaning of a(n) entity (relation), the other one is used to construct mapping matrix dynamically. 
+Compared with TransR/CTransR, TransD not only considers the diversity of relations, but also entities. It has less parameters and has no matrix-vector multiplication operations.
 
 1. **KG2E:** **Learning to Represent Knowledge Graphs with Gaussian Embedding**. CIKM 2015. [[Paper](http://www.nlpr.ia.ac.cn/cip/~liukang/liukangPageFile/Learning%20to%20Represent%20Knowledge%20Graphs%20with%20Gaussian%20Embedding.pdf)]  
     *Shizhu He, Kang Liu, Guoliang Ji and Jun Zhao*.
+    > This paper proposes **KG2E** to explicitly model the certainty of entities and relations, which learns the representations of KGs in the space of multi-dimensional Gaussian distributions. Each entity/relation is represented by a Gaussian distribution, where the mean denotes its position and the covariance (currently with diagonal covariance) can properly represent its certainty.
 
-1. **pTransE:** **Modeling Relation Paths for Representation Learning of Knowledge Bases**. EMNLP 2015. [[Paper](https://www.aclweb.org/anthology/D15-1082/)]  
+1. **pTransE:** **Modeling Relation Paths for Representation Learning of Knowledge Bases**. EMNLP 2015. [[Paper](https://www.aclweb.org/anthology/D15-1082.pdf)]  
     *Yankai Lin, Zhiyuan Liu, Huanbo Luan, Maosong Sun, Siwei Rao, Song Liu*.
+    > This paper proposes **pTransE** to consider relation paths as translations between entities for representation learning, and addresses two key challenges: (1) we design a path-constraint resource allocation algorithm to measure the reliability of relation paths; (2) we represent relation paths via semantic composition of relation embeddings.
 
 1. **RTransE:** **Composing Relationships with Translations**. EMNLP 2015. [[Paper](https://www.aclweb.org/anthology/D15-1034.pdf)]  
     *Alberto García-Durán, Antoine Bordes, Nicolas Usunier*.
+    > This paper proposes **RTransE**, which is an extension of TransE that learns to explicitly model composition of relationship via the addition of their corresponding translation vectors.
 
 1. **ManifoldE:** **From One Point to A Manifold: Knowledge Graph Embedding For Precise Link Prediction**. IJCAI 2016. [[Paper](https://arxiv.org/pdf/1512.04792.pdf)]  
     *Han Xiao, Minlie Huang, Xiaoyan Zhu*.
+    > This paper proposes a manifold-based embedding principle (**ManifoldE**) which could be treated as a well-posed algebraic system that expands point-wise modeling in current models to manifold-wise modeling. The score function is designed by measuing the distance of the triple away from a manifold.
 
 1. **TransG:** **A Generative Mixture Model for Knowledge Graph Embedding**. ACL 2016. [[Paper](https://www.aclweb.org/anthology/P16-1219.pdf)]  
     *Han Xiao, Minlie Huang, Xiaoyan Zhu*.
+    > This paper proposes **TransG** to address the issue of multiple relation semantics that a relation may have multiple meanings revealed by the entity pairs associated with the corresponding triples. TransG can discover latent semantics for a relation and leverage a mixture of relation-specific component vectors to embed a fact triple.
 
 1. **TranSparse:** **Knowledge Graph Completion with Adaptive Sparse Transfer Matrix**. AAAI 2016. [[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11982/11693)]  
     *Guoliang Ji, Kang Liu, Shizhu He, Jun Zhao*.
